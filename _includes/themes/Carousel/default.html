@@ -282,13 +282,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Project name</a>
+            <a class="brand" href="{{ HOME_PATH }}">西安祥泰电机技术有限公司</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
+              <!--
                 {% assign pages_list = site.pages %}
                 {% assign group = 'navigation' %}
                 {% include JB/pages_list %}
+              -->
+              <li><a href="{{ HOME_PATH }}product.html">电机产品</a></li>
+              <li><a href="{{ HOME_PATH }}about.html">联系我们</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->

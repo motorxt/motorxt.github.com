@@ -26,29 +26,39 @@
 
 
       <!-- START THE FEATURETTES -->
-    
+   <!-- 
     <hr class="featurette-divider">
       <div class="featurette">
 		{% for post in site.posts %}
-		<!--
+		
     		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-		-->
+		
     		<img class="featurette-image pull-right" src="{{ ASSET_PATH }}Carousel/img/products/browser-icon-chrome.png">
 	        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
 	        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-  		{% endfor %}
+  	{% endfor %}
   	  </div>
+   -->
 
+{% for post in site.posts %}
+  <!--
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  -->
     <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-left" src="{{ ASSET_PATH }}Carousel/img/products/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        
+
+        <a href="{{ BASE_PATH }}{{ post.url }}"><img class="featurette-image pull-left" src="{{ ASSET_PATH }}Carousel/img/products/browser-icon-firefox.png">
+        <h2 class="featurette-heading">{{ post.title }} </a><span class="muted">{{ post.date | date_to_string }}</span></h2>
+        <p class="lead">{{ post.description }}</p>
       </div>
 
       <hr class="featurette-divider">
+{% endfor %}
 
+
+  <!--
       <div class="featurette">
         <img class="featurette-image pull-right" src="{{ ASSET_PATH }}Carousel/img/products/browser-icon-safari.png">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
@@ -56,4 +66,5 @@
       </div>
 
       <hr class="featurette-divider">
+  -->
       <!-- /END THE FEATURETTES -->
