@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About"
+title: "西安祥泰电机技术有限公司-关于我们"
 description: ""
 ---
 {% include JB/setup %}
