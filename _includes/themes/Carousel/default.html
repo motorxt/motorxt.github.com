@@ -19,6 +19,7 @@
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
+      background-image: url({{ ASSET_PATH }}/img/binding_light.png)
     }
 
 
@@ -291,7 +292,7 @@
                 {% include JB/pages_list %}
               -->
               <li><a href="{{ HOME_PATH }}product.html">电机产品</a></li>
-              <li><a href="{{ HOME_PATH }}about.html">联系我们</a></li>
+              <li><a href="{{ HOME_PATH }}about.html">关于我们</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -307,32 +308,41 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="{{ ASSET_PATH }}/img/examples/slide-01.jpg" alt="">
+          <img src="{{ ASSET_PATH }}/img/slide/s1.png" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+              <h1>专业设计</h1>
+              <br>
+              <p class="lead">专业设计各种电机，按照客户需求量身定做，值得信赖！</p>
+              <br>
+              <p class="lead">详情请致电 13572130827（周先生）</p>
+              <!--<a class="btn btn-large btn-primary" href="#">查看详情</a>-->
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="{{ ASSET_PATH }}/img/examples/slide-02.jpg" alt="">
+          <img src="{{ ASSET_PATH }}/img/slide/s2.png" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+              <h1>专业团队</h1>
+              <br>
+              <p class="lead">专业设计各种电机，按照客户需求量身定做，值得信赖！</p>
+              <br>
+              <p class="lead">详情请致电 13572130827（周先生）</p>
+              <!--<a class="btn btn-large btn-primary" href="#">查看详情</a>-->
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="{{ ASSET_PATH }}/img/examples/slide-03.jpg" alt="">
+          <img src="{{ ASSET_PATH }}/img/slide/s3.png" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+              <h1>量身定做</h1>
+              <br>
+              <p class="lead">专业设计各种电机，按照客户需求量身定做，值得信赖！</p>
+              <br>
+              <p class="lead">详情请致电 13572130827（周先生）</p>
+              <!--<a class="btn btn-large btn-primary" href="#">查看详情</a>-->
             </div>
           </div>
         </div>
@@ -346,8 +356,11 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; {{ site.author.name }} {{ site.time | date: '%Y' }} &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <hr class="featurette-divider">
+        <p class="pull-right"><a href="#">回到顶部</a></p>
+        <p>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+          <!--&middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          -->
       </footer>
 
     </div><!-- /.container -->
